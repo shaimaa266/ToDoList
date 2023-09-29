@@ -14,9 +14,8 @@ class MyGridView extends StatelessWidget {
         title: Text("Gallery"),
         titleTextStyle: TextStyle(color: Colors.black87,fontSize: 22),
         centerTitle: true,
-      ),git push origin master
-
-    body: GridView.builder(
+      ),
+      body: GridView.builder(
         itemCount: images.length * 4, // Repeat images 2 times
         gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 2,
