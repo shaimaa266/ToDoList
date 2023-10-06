@@ -11,13 +11,13 @@ class MyGridView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Gallery"),
-        titleTextStyle: TextStyle(color: Colors.black87,fontSize: 22),
+        title:  const Text("Gallery"),
+        titleTextStyle:  const TextStyle(color: Colors.black87,fontSize: 22),
         centerTitle: true,
       ),
       body: GridView.builder(
         itemCount: images.length * 4, // Repeat images 2 times
-        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+        gridDelegate:  const SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 2,
           crossAxisSpacing: 15,
           mainAxisSpacing: 10,

@@ -17,7 +17,7 @@ class DialogScreen extends StatefulWidget {
 class _DialogScreenState extends State<DialogScreen> {
   Color backColor = const Color(0xff4368FF);
 
-  // Define your list of ToDo items
+
   final List<ToDoItem> todoItems = [
     ToDoItem("Communication System Quiz", "10:00 AM"),
     ToDoItem("OS report", "11:00 AM"),
@@ -44,7 +44,7 @@ class _DialogScreenState extends State<DialogScreen> {
               ),
             ),
             Expanded(
-              // Use ListView.builder to create a scrollable list
+
               child: ListView.builder(
                 itemCount: todoItems.length,
                 itemBuilder: (context, index) {
@@ -52,7 +52,7 @@ class _DialogScreenState extends State<DialogScreen> {
                   return ListTile(
                     title: Text(
                       item.title,
-                      style: TextStyle(
+                      style:  const TextStyle(
                         color: Colors.white,
                         fontSize: 22,
                         fontWeight: FontWeight.bold,
@@ -60,7 +60,7 @@ class _DialogScreenState extends State<DialogScreen> {
                     ),
                     subtitle: Text(
                       item.time,
-                      style: TextStyle(
+                      style:  const TextStyle(
                         color: Colors.white,
                         fontSize: 22,
                       ),
@@ -94,7 +94,7 @@ class _DialogScreenState extends State<DialogScreen> {
                                     });
 
                                   },
-                                  child: Text(
+                                  child:  const Text(
                                     "Cancel",
                                     style: TextStyle(
                                       color: Colors.blueGrey,
@@ -110,7 +110,7 @@ class _DialogScreenState extends State<DialogScreen> {
                                   });
 
                                   },
-                                  child: Text(
+                                  child:  const Text(
                                     "Yes",
                                     style: TextStyle(
                                       color: Colors.red,
@@ -124,7 +124,7 @@ class _DialogScreenState extends State<DialogScreen> {
                         );
                       },
                       color: Colors.white,
-                      icon: Icon(Icons.delete_forever),
+                      icon:  const Icon(Icons.delete),
                     ),
                   );
                 },

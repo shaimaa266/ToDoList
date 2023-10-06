@@ -1,9 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ieee_project/todolist.dart';
-
-
-
-
+import 'package:ieee_project/Login/login_screen.dart';
 void main() {
   runApp(const MyApp());
 }
@@ -29,7 +25,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home:  DialogScreen(),
+      home:LoginScreen(),
     );
   }
 }
